@@ -1,0 +1,39 @@
+.deck {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+  min-width: 100px;
+  padding: 4px;
+}
+
+.upperLeft,
+.lowerRight {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.upperLeft svg,
+.lowerRight svg {
+  margin: 4px 0;
+}
+
+.upperLeft {
+  align-self: flex-start;
+}
+
+.lowerRight {
+  align-self: flex-end;
+}
+
+.centerIcon {
+  align-self: center;
+}
