@@ -1,10 +1,5 @@
-.deck {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .card {
+  background-color: #fff;
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
@@ -12,6 +7,16 @@
   justify-content: space-between;
   min-width: 100px;
   padding: 4px;
+  z-index: 1;
+}
+
+.inPile {
+  position: absolute;
+}
+
+.faceDown {
+  background-color: rgb(145, 126, 126);
+  z-index: 1;
 }
 
 .upperLeft,
@@ -36,4 +41,36 @@
 
 .centerIcon {
   align-self: center;
+}
+
+.nartsPile {
+  position: relative;
+  left: 2rem;
+}
+
+.nartsPileArea {
+  border: 1px solid #000;
+  height: 300px;
+  margin: 1rem 2rem;
+  width: 100%;
+}
+
+.nartsPileHolder {
+  border: 1px solid #000;
+  height: 160px;
+  width: 107px;
+}
+
+.personalBoard {
+  display: flex;
+  margin-left: 200px;
+}
+
+.personalBoard > div {
+  margin: 0 0.5rem;
+}
+.stockPile {
+  position: relative;
+  left: 2rem;
+  margin: 1rem;
 }

@@ -8,9 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "autoprefixer": "^10.0.4",
     "next": "10.0.3",
+    "postcss": "^8.1.14",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-draggable": "^4.4.3",
+    "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
